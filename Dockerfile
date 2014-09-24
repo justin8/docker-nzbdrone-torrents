@@ -5,7 +5,7 @@ MAINTAINER justin@dray.be
 RUN curl -sO https://repo.dray.be/dray-repo-0.7-1-any.pkg.tar.xz
 RUN pacman -U --noconfirm dray-repo-0.7-1-any.pkg.tar.xz
 RUN pacman -Syq --noprogressbar --noconfirm aura-bin
-RUN sudo aura -A --noprogress --noconfirm nzbdrone-torrents
+RUN sudo aura -Aa --noprogress --noconfirm nzbdrone-torrents
 
 VOLUME "/config"
 
