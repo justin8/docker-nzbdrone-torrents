@@ -1,7 +1,7 @@
 FROM justin8/archlinux
 MAINTAINER justin@dray.be
 
-RUN pacman -Sq --noprogressbar --noconfirm nzbdrone-torrents
+RUN pacman -Syq --noprogressbar --noconfirm nzbdrone-torrents
 
 VOLUME "/config"
 
