@@ -1,7 +1,9 @@
 FROM justin8/archlinux
 MAINTAINER justin@dray.be
 
-RUN pacman -Syq --noprogressbar --noconfirm nzbdrone-torrents
+RUN pacman -Syq --noprogressbar --noconfirm expect
+ADD installer.sh /
+RUN chmod +x /installer.sh; /installer.sh
 
 VOLUME "/config"
 
