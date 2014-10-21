@@ -9,7 +9,7 @@ expect << EOF
 	}
 	set timeout 60
 
-	spawn pacman -Syq --noprogressbar nzbdrone-torrents
+	spawn pacman -Syq --noprogressbar lzo
 	expect {
 		-exact "lzo2" { send -- "y\r"; exp_continue }
 		-exact "Enter a number" { send -- "\r"; exp_continue }
