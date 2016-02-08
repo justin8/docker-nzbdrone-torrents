@@ -6,7 +6,8 @@ RUN echo "@testing http://dl-4.alpinelinux.org/alpine/edge/testing" >> /etc/apk/
     rm -rf /var/cache/apk/*
 
 RUN wget -O sonarr.tar.gz http://download.sonarr.tv/v2/develop/mono/NzbDrone.develop.tar.gz && \
-    tar zxf sonarr.tar.gz
+    tar zxf sonarr.tar.gz && \
+    rm sonarr.tar.gz
 
 RUN wget -qO - http://download.sonarr.tv/v2/develop/mono/ | \
     grep -o '[0-9][0-9.]*.mono.tar.gz' | \
