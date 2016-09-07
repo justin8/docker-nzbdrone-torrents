@@ -1,4 +1,4 @@
-FROM alpine
+FROM justin8/alpine
 MAINTAINER justin@dray.be
 
 RUN echo "@testing http://dl-4.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
