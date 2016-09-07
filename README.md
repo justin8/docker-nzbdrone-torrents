@@ -1,5 +1,5 @@
 #Docker Couchpotato#
-[![Build Status](https://jenkins.dray.be/buildStatus/icon?job=docker_sonarr-develop)](https://jenkins.dray.be/job/docker_sonarr-develop)
+[![Run Status](https://api.shippable.com/projects/57cfd381bd15f30f00415c20/badge?branch=master)](https://app.shippable.com/projects/57cfd381bd15f30f00415c20)
 
 This is a docker image for Sonarr's develop branch running on an Alpine linux container
 
